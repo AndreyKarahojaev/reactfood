@@ -1,0 +1,50 @@
+[
+  {
+    "id": 0,
+    "imageUrl": "img/card1.png",
+    "title": "Calabrese Broccoli",
+    "priceOld": 25.00,
+    "price": 21.00,
+    "rating": 4
+  },
+  {
+    "id": 0,
+    "imageUrl": "img/card2.png",
+    "title": "Fresh Corn",
+    "priceOld": 18.00,
+    "price": 21.23,
+    "rating": 4
+  },
+  {
+    "id": 0,
+    "imageUrl": "img/card3.png",
+    "title": "Dried Pistachio",
+    "priceOld": 48.00,
+    "price": 61.00,
+    "rating": 4
+  },
+  {
+    "id": 0,
+    "imageUrl": "img/card4.png",
+    "title": "Vegan Red Tomato",
+    "priceOld": 9.37,
+    "price": 14.00,
+    "rating": 4
+  },
+  {
+    "id": 0,
+    "imageUrl": "img/card5.png",
+    "title": "Organic Almonds",
+    "priceOld": 18.00,
+    "price": 21.00,
+    "rating": 4
+  },
+  {
+    "id": 0,
+    "imageUrl": "img/card6.png",
+    "title": "Brown Hazelnut",
+    "priceOld": 34.00,
+    "price": 43.00,
+    "rating": 4
+  }
+]

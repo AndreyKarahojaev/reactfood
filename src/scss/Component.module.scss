@@ -1,0 +1,157 @@
+.header {
+  width: 100%;
+}
+
+.headerNav {
+  width: 70%;
+  color: #274C5B;
+  li {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 0.36px;
+    color: #274C5B;
+
+    &.activeHead {
+      position: relative;
+      cursor: pointer;
+      color: #7EB693;
+      border-radius: 12px;
+    }
+    
+    &.activeHead:hover::before{
+      content: '';
+      display: inline;
+      top: 3px;
+      left: -5px;
+      bottom: 10px;
+      width: 125%;
+      height: 75%;
+      position: absolute;
+      box-shadow: 0px 0px 2px 2px #CCCCCC;
+      border-radius: 3px;
+    }
+  }
+}
+
+
+
+.headerCart {
+  border: 1px solid #D4D4D4;
+  border-radius: 33px;
+}
+
+.header-btn {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+    span{
+      position: relative;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+}
+
+
+//  foooter
+
+.footerTitle {
+  
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 42px;
+  /* identical to box height, or 140% */
+
+  text-align: right;
+  letter-spacing: 0.36px;
+
+  color: #274C5B;
+ 
+
+}
+
+.footer {
+  font-family: 'Roboto';
+
+}
+
+.footerUl {
+  display: flex;
+  li{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  
+  }
+}
+
+.text {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 29px;
+  padding:5px;
+  /* identical to box height, or 160% */
+
+  text-align: right;
+  letter-spacing: 0.36px;
+
+  color: #525C60;
+
+  &--title{
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 23px;
+      padding:5px;
+  }
+}
+
+.footerTopCenter {
+  max-width: 670px;
+  width: 100%;
+  border-left: 2px solid #D5D5D5;
+  border-right: 2px solid #D5D5D5;
+  margin: 0 10px 0 10px;
+
+  p{
+    padding: 65px;
+  }
+}
+
+.footerTopLeft,
+.footerTopRight 
+{
+  max-width: 355px;
+  width: 100%;
+  padding-bottom: 25px;
+}
+
+.footerTopRight {
+
+  ul {
+    margin-top: 10px;
+  
+    li{
+      padding-top: 5px;
+      padding-bottom: 5px;
+      cursor: pointer;
+    }
+  }
+}
+
+.footerBottom {
+  padding: 21px 0 40px 0;
+  text-align: center;
+  width: 100%;
+  border-top: 2px solid #D5D5D5;
+}
+
+

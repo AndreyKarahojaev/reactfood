@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'Component.module';
+@import 'Pages.module';
+
+body {
+  margin: 0;
+  background-color: #EFF6F1;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  height: 100%;
+  background-color: #FFFFFF;
+  margin: 0 auto;
+  
+}
+
+
+
+.activeCart:hover {
+  cursor: pointer;
+  background-color: #7EB693;
+  border-radius: 33px;
+}
+
+// color
+// #D4D4D4 #274C5B #B8B8B8 #7EB693 #EFD372 #525C60 #CCCCCC
