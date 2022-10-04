@@ -1,9 +1,21 @@
 import React from 'react';
 import Card from '../components/Card';
-import base from '../base.json'
-
+import OtherProduct from './OtherProduct';
+import base from '../base.json';
+import Skeleton from '../components/Skeleton';
 
 function Shop() {
+
+  const [isLoading, setIsLoading] = React.useState(true);
+
+  //https://6331b2413ea4956cfb652835.mockapi.io/items
+
+
+  React.useEffect(() => {
+    setTimeout(() => { 
+      setIsLoading(false);
+    }, 1400);
+  }, []);
 
   return (
     <div className="shop">
@@ -11,7 +23,9 @@ function Shop() {
       <h3 className="shopTitle">Our Products</h3>
       <div className="shopGrid grid gap-5">
       {
-        base.map((obj) => (
+       isLoading 
+       ? [...new Array(6)].map((_,i) => <Skeleton key={i} /> ) 
+       : base.map((obj) => (
           <Card 
           title = {obj.title}
           imageUrl = {obj.imageUrl}
@@ -22,6 +36,7 @@ function Shop() {
         ))
       }
       </div>
+      <OtherProduct/>
     </div>
   );
 }

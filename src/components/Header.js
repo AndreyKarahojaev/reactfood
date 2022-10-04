@@ -1,15 +1,10 @@
 import React from "react";
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function Header() {
 
-  const [activeIndex, setActiveIndex] = React.useState(0);
-
-  const categories = ['Home','About Us','Shop','Pages','Contact Us'];
-
-  const onClickCategory = (index) => {
-    setActiveIndex(index)
-  }
+  // const [items, setItems] = React.useState([]);
+  // const [isLoading, setIsLoading] = React.useState(0);
 
   return(
     <header className="header flex pt-10 px-4 mb-16">
@@ -41,9 +36,11 @@ function Header() {
         </svg>
       </div>
       <ul className="headerNav flex justify-evenly pt-3">
-        {
-          categories.map((value, index) => <li onClick={ () => onClickCategory(index)} className={ activeIndex === index ? 'activeHead' : ''}>{value}</li> )
-        }
+      <li><Link to="/">Home</Link></li>
+      <li><Link to="/AboutUs">About Us</Link></li>
+      <li><Link to="/Shop">Shop</Link></li>
+      <li><Link to="/Testimonial">Remark</Link></li>
+      <li><Link to="/News">News</Link></li>
       </ul>
       <div className="headerCart">
         <div className="header-btn activeCart">

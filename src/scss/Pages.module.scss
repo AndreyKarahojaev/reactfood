@@ -292,8 +292,7 @@ $content-height: 940px;
 //shop
 
 .shop {
-  padding-top: 30px;
-  padding-bottom: 30px;
+ position: relative;
 }
 .styleTitle {
   width: 100%;
@@ -643,7 +642,6 @@ $content-height: 940px;
 
 .otherProductBackground {
   background: #274C5B;
-  margin-bottom: 140px;
 }
 
 .btn-other {
@@ -717,8 +715,6 @@ $content-height: 940px;
     max-height: 580px;
     position: relative;
     color: #274C5B;
-
-
 
       img {
         display: block;

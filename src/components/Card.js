@@ -1,6 +1,7 @@
 import React, {useState}  from "react";
 import StarRating from "./StarReiting";
 
+
 function Card({title,imageUrl,price,priceOld,rating}) {
 
   const [cardCount,setCardCount] = useState(0);

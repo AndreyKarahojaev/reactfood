@@ -1,7 +1,17 @@
 import React from "react";
-import { Link } from 'react-router-dom';
 
-function Footer(props) {
+
+function Footer() {
+
+  const [activeIndex, setActiveIndex] = React.useState(0);
+
+  const categories = ['Style Guide','Protected','Page Not Found','Changelog','Licenses'];
+
+  const onClickCategory = (index) => {
+    setActiveIndex(index)
+  }
+
+
   return (
     <footer className="footer flex flex-col mt-32">
       <div className="footerTop flex flex-row content-center justify-center px-8">
@@ -53,21 +63,9 @@ function Footer(props) {
         <div className="footerTopRight flex flex-col content-center items-start justify-evenly">
           <h3 className="footerTitle">Utility Pages</h3>
           <ul>
-            <li>
-              <Link to="/favorites"><span className="text"> Style Guide</span></Link>
-            </li>
-            <li>
-              <Link to="/favorites"><span className="text"> Protected</span></Link>
-            </li>
-            <li>
-              <Link to="/favorites"><span className="text"> Page Not Found</span></Link>
-            </li>
-            <li>
-              <Link to="/favorites"><span className="text"> Changelog</span></Link>
-            </li>
-            <li>
-              <Link to="/favorites"><span className="text"> Licenses</span></Link>
-            </li>
+            {
+              categories.map((value, index) => <li onClick={ () => onClickCategory(index)} className={ activeIndex === index ? 'activeHead' : ''}>{value}</li> )
+            }
           </ul>
         </div>
       </div>

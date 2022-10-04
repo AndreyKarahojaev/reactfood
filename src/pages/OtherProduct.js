@@ -7,9 +7,9 @@ function OtherProduct() {
   const slicedArray = base.slice(0, 3);
 
   return (
-    <div className="otherProduct">
-      <div className="otherProductBackground flex flex-col">
-        <div className="flex items-center justify-between pl-9 pr-9 mb-10">
+    <div className="otherProduct mt-5">
+      <div className="otherProductBackground flex flex-col mb-20">
+        <div className="flex items-center justify-between pl-9 pr-9">
           <div className="otherProductTop">
             <h3>Offer Products</h3>
             <h4>We Offer Organic for You</h4>
