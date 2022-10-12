@@ -1,5 +1,6 @@
 import React, {useState}  from "react";
-import StarRating from "./StarReiting";
+import StarRating from "../StarReiting";
+import styles from './Card.module.scss';
 
 
 function Card({title,imageUrl,price,priceOld,rating}) {
@@ -14,10 +15,10 @@ function Card({title,imageUrl,price,priceOld,rating}) {
       <div className="cardGroup">
         <button onClick={onClickAddButton} className="cardGroupText">Byu<i>{cardCount}</i></button>
       </div>
-      <img className="cardImg" src={imageUrl} alt="cartinka" />
+      <img className="cardImg"  src={imageUrl} alt="cartinka" />
       <div className="cardContent flex flex-wrap">
         <p className="cardText">{title}</p>
-      <div className="flex justify-between w-full pt-4">
+      <div className={styles.podpiz}>
         <div className="flex flex-row">
           <p className="cardPriceOld p-2">$ {priceOld} USD</p>
           <p className="cardPrice p-2">$ {price} USD</p>

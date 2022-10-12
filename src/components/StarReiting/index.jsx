@@ -7,7 +7,7 @@ function StarRating() {
   return (
     <div className="flex flex-row">
       {[...Array(5)].map((star,i) => {
-        const ratingValue = i + 1
+        const ratingValue = i + 1;
 
         return (
         <label>
